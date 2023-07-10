@@ -90,12 +90,10 @@ public class MenuActivity extends AppCompatActivity {
                 }
                 int port = Integer.parseInt(cmd.substring(cmd.indexOf("<port>") + 6, cmd.indexOf("</port>")));
                 String filename = cmd.substring(cmd.indexOf("<filename>") + 10, cmd.indexOf("</filename>"));
-                Looper.prepare();
-                Toast.makeText(this, "接收到文件"+filename, Toast.LENGTH_LONG).show();
-                Looper.loop();
-                getFileClient getFileClient = new getFileClient(ip, port, getPath(this) + "/" + filename);
+                System.out.println(ip+" "+port+" "+filelocation);
+                getFileClient getFileClient = new getFileClient(ip, port, Environment.getExternalStorageDirectory().getAbsolutePath()+ "/Download/" + filename);
                 getFileClient.start();
-                break;
+                 break;
         }
     }
 

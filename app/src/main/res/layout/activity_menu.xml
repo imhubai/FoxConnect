@@ -72,7 +72,7 @@
                                 <ImageView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content" app:srcCompat="@drawable/success"
-                                        android:id="@+id/imageView" android:layout_centerInParent="false"
+                                        android:id="@+id/image_sendcmd" android:layout_centerInParent="false"
                                         android:layout_above="@id/tv_card_sendcmd"
                                         android:layout_centerHorizontal="true"
                                         android:layout_marginBottom="24dp"/>
@@ -98,7 +98,7 @@
                                 <ImageView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content" app:srcCompat="@drawable/success"
-                                        android:id="@+id/imageView" android:layout_centerInParent="false"
+                                        android:id="@+id/image_sendfile" android:layout_centerInParent="false"
                                         android:layout_above="@id/tv_card_sendfile"
                                         android:layout_centerHorizontal="true"
                                         android:layout_marginBottom="24dp"/>
@@ -124,7 +124,7 @@
                                 <ImageView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content" app:srcCompat="@drawable/success"
-                                        android:id="@+id/imageView" android:layout_centerInParent="false"
+                                        android:id="@+id/image_manage" android:layout_centerInParent="false"
                                         android:layout_above="@id/tv_card_manager"
                                         android:layout_centerHorizontal="true"
                                         android:layout_marginBottom="24dp"/>
