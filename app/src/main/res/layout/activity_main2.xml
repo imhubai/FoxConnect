@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent" android:id="@+id/tv">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" tools:layout_editor_absoluteY="16dp"
+            tools:layout_editor_absoluteX="-16dp" android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp" android:layout_alignParentStart="true" app:cardElevation="10dp"
+                android:layout_marginTop="5dp" android:layout_marginStart="5dp" android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp" android:id="@+id/TopCard">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:text="当前没有连接设备"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView3" android:textColor="#000000"
+                        android:layout_centerVertical="true" android:layout_marginStart="5dp" android:textSize="16sp"/>
+                <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:id="@+id/bt_scan" android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp" android:layout_centerVertical="true"
+                        android:src="@drawable/scan" android:background="@null" android:contentDescription="TODO"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_below="@id/TopCard"
+                android:layout_marginStart="10dp" android:layout_marginBottom="5dp"
+                android:id="@+id/LinearLayout_LastConnect">
+            <TextView
+                    android:text="上一次连接:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView4" android:layout_weight="1"
+                    android:textColor="@color/black"/>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp" android:layout_alignParentStart="false" app:cardElevation="10dp"
+                android:layout_marginTop="5dp" android:layout_marginStart="5dp" android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp" android:id="@+id/LastConnectCard"
+                android:layout_below="@id/LinearLayout_LastConnect">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" android:layout_alignParentStart="true"
+                        android:layout_margin="5dp">
+                    <TextView
+                            android:text="PCNAME"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/tv_LastConnectName"
+                            android:textColor="@color/black" android:textSize="16sp"/>
+                    <TextView
+                            android:text="127.0.0.1:25565"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/tv_LastConnectIP"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:id="@+id/bt_connect" android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp" android:layout_centerVertical="true"
+                        android:src="@drawable/connect" android:background="@null"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

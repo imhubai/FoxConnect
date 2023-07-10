@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dialog_bg">
+
+    <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="170dp"
+            android:orientation="vertical" android:background="@color/white"
+            android:elevation="8dp">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" android:id="@+id/RelativeLayout_Top"
+                android:background="@color/black">
+
+            <TextView
+                    android:text="请输入电脑上显示的配对码"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView5" android:textColor="@color/white"
+                    android:layout_marginTop="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp" android:textSize="16sp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/et_dialog_code" android:layout_marginTop="10dp" android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp" android:layout_marginBottom="10dp"
+                android:layout_below="@id/RelativeLayout_Top" android:layout_centerHorizontal="true"
+                android:text="3333" android:textColor="#000000" android:textSize="20sp" android:textAlignment="center"
+                android:textAllCaps="false" android:textIsSelectable="false"/>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+            <Button
+                    android:text="确定"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/bt_dialog_ok"
+                    android:layout_alignParentEnd="true" style="@style/Widget.AppCompat.Button"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
